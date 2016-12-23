@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2016 Daily Best</title>
+  <link rel="stylesheet" href="cutestrap.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div ng-controller="main.ctrl">
+    <h1>2016 Daily Best</h1>
+    <div class="item" ng-repeat="item in list | orderBy:'-index'" style="background-color: {{colors[$index % colors.length]}}">
+      <div>
+        <a class="link" ng-href="http://1boon.kakao.com/{{item.path}}">
+          <p ng-bind="item.title"></p>
+          <p class="info fs-small">
+            <span ng-bind="item.day"></span> |
+            <span ng-bind="item.viewCount | number"></span> |
+            <span ng-bind="item.category"></span>
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

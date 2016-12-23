@@ -1,0 +1,23 @@
+h1{
+  text-align: center;
+}
+.item {
+  text-align: center;
+  vertical-align: middle;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  display: block;
+  color: #fff !important;
+  text-decoration: none;
+
+}
+.item > div {
+
+}
+.item .info {
+
+}

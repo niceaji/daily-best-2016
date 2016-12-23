@@ -1,0 +1,21 @@
+{
+  "name": "daily-best-2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "moment": "^2.17.1",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git push -u github gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.daumkakao.com:packaging/daily-best-2016.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
