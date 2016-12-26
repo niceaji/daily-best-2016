@@ -4,12 +4,16 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "lodash": "^4.17.3",
     "moment": "^2.17.1",
+    "mustache": "^2.3.0",
+    "numeral": "^2.0.4",
     "request": "^2.79.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node parse.js && mustache data.json template.html > index.html",
     "deploy": "git push -u origin gh-pages"
   },
   "repository": {
